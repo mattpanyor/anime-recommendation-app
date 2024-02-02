@@ -1,14 +1,6 @@
-// setting up default catalogItem
-var testAnimeCatalogItem = {
-    title: 'testTitle',
-    ranking: 0,
-    score: 0.0,
-    imgUrl: '',
-    animeUrl: '',
-    synopsis: '',
-    episodes: 0
-}
+// =========== Hero Section ============
 
+// default hero item
 var animeHero = {
     quoteCharacter: 'testCharacter',
     quoteText: 'testQuoteText',
@@ -54,6 +46,19 @@ function getSetUpHeroAnimeData () {
 
                 });
         });
+}
+
+// =========== Anime Catalog Section ============
+
+// setting up default catalogItem for testing
+var testAnimeCatalogItem = {
+    title: 'testTitle',
+    ranking: 0,
+    score: 0.0,
+    imgUrl: '',
+    animeUrl: '',
+    synopsis: '',
+    episodes: 0
 }
 
 /*
