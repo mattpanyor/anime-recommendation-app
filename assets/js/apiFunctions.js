@@ -60,7 +60,8 @@ var testAnimeCatalogItem = {
     synopsis: '',
     episodes: 0
 }
-
+var TVcatalog = [];
+var Moviecatalog = [];
 /*
     genre IDs
     Action  :   1
@@ -77,7 +78,6 @@ function setUpAnimeCatalogData (genre){
     fetch('https://api.jikan.moe/v4/anime?sort=desc&order_by=score&limit=6&type=tv&genres='+ genre)
         .then((response) => response.json())
         .then((list) => {
-            var TVcatalog = [];
             list.data.forEach(anime => {
                 var animeCatalogItem = {
                     title: anime.title,
@@ -91,15 +91,14 @@ function setUpAnimeCatalogData (genre){
                 TVcatalog.push(animeCatalogItem);
                     
             });
-            //console.log(TVcatalog);
-
+            // console.log(TVcatalog);
             //TODO TV catalog building function
+            TVrender()
         });
 
     fetch('https://api.jikan.moe/v4/anime?sort=desc&order_by=score&limit=6&type=movie&genres='+ genre)
         .then((response) => response.json())
         .then((list) => {
-            var Moviecatalog = [];
             list.data.forEach(anime => {
                 var animeCatalogItem = {
                     title: anime.title,
@@ -112,8 +111,8 @@ function setUpAnimeCatalogData (genre){
                 Moviecatalog.push(animeCatalogItem);
                 
             });
-            //console.log(Moviecatalog);
-
+            // console.log(Moviecatalog);
             //TODO Movie catalog building function
+            movieRender()
         });
 }
