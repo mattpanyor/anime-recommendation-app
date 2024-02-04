@@ -17,7 +17,10 @@ var animeHero = {
 // executing two API calls to get a random series hit then serve their data to a return object
 function getSetUpHeroAnimeData () {
 
-    fetch("https://animechan.xyz/api/random")
+    const url = "https://cors-anywhere-jung-48d4feb9d097.herokuapp.com/" + "https://animechan.xyz/api/random"
+
+        fetch(url, () => {})
+   // fetch("https://animechan.xyz/api/random")
         .then((response) => response.json())
         .then((quote) => {
             // checking if call was successful
@@ -42,7 +45,8 @@ function getSetUpHeroAnimeData () {
                     animeHero.animeURL = anime.url;
 
                     // TODO: call Hero Set-up function
-                    //console.log(animeHero);
+                    animeHeroSetup()
+                    console.log(animeHero);
 
                 });
         });

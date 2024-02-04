@@ -1,3 +1,12 @@
+// =========== Hero Section ============
+function animeHeroSetup() {
+    var heroImage = $("<img>");
+    heroImage.attr("src", animeHero.imgUrl);
+    $(".hero-image").append(heroImage);
+    $(".hero-title").html("<h1>" + animeHero.title + "</h1>");
+    $(".hero-name").text("~ " + animeHero.quoteCharacter);
+    $(".hero-quote").html("<blockquote cite=" + animeHero.animeURL + ">" + animeHero.synopsis + "</blockquote>");
+}
 // =========== Anime Catalog Section ============
 // This function renders TV catatog
 function TVrender (){
