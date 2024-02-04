@@ -1,10 +1,64 @@
-/* Generels */
+/* Generals */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
+
 p {
+
     margin:0;
     color:#cedfe7
 }
 /* Hero */
-/* Navigatin */
+.jumbotron {
+    height: calc(100vh - 25px);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+blockquote {
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: italic;
+    max-width: 95%;
+    max-height: fit-content;
+    font-size: 1em;
+    border-top: 1px solid white;
+}
+
+blockquote:before {
+    content: "‟";
+    color: white;
+    font-size: 2rem;
+}
+
+.hero-title h1 {
+    font-weight:700;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.hero-image {
+    display:flex;
+    justify-content: right;
+}
+
+.hero-image img {
+    height: 100%;
+}
+
+.hero-name p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.copy {
+    min-width: 50%;
+    max-width: 100%;
+    font-family: 'Ibarra Real Nova', serif;
+    color:#cedfe7;
+    display:flex;
+    flex-direction: column;    
+    padding-bottom: 20px;
+}
+
+/* Navigation */
 
 
 /* Catalog */
@@ -68,4 +122,56 @@ p {
 .icon {
     width: 60%;
     height:60%;
+}
+
+@media screen and (max-width: 750px) and (min-width: 1000px) {
+    .copy {
+        flex-direction: column;  
+        margin-top: auto;
+        height:100px;
+        width:100%;
+        justify-content: space-between;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* */
+
+.jumbotron {
+        height: 100%;
+        max-height: fit-content;
+}
+.hero-title h1{
+    justify-content: center;
+    align-content: center;
+}
+
+blockquote {
+    max-width: 100%;
+    font-size: 12px;
+    border-top: 1px solid white;
+    max-height: fit-content;
+}
+
+.copy {
+    flex-direction: column;  
+    margin-top: auto;
+    height:100px;
+    width:100%;
+    justify-content: space-between;
+
+}
+
+.hero-image {
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-image img {
+    max-height: 50%;
+}
+
+.hero-name p{
+    font-size: 1em;
 }
