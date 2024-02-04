@@ -1,1 +1,2 @@
+getSetUpHeroAnimeData ();
 setUpAnimeCatalogData (4)
