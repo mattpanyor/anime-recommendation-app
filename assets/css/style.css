@@ -1,11 +1,17 @@
 /* Generals */
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
-
+body {
+    background-color: #000;
+}
 p {
-
     margin:0;
-    color:#cedfe7
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+a {
+    color: azure !important;
 }
 /* Hero */
 .jumbotron {
@@ -62,7 +68,9 @@ blockquote:before {
 
 
 /* Catalog */
-
+.category{
+    font-family: 'Ibarra Real Nova', serif;
+}
 .holder {
     padding:0 1.5%;
     position: relative;
@@ -77,11 +85,11 @@ blockquote:before {
     top:-3.5%;
     left:50%;
     transform: translateX(-50%);
-    width:93%;
+    width:92%;
     height:126%;
-    background-color: rgba(21, 20, 21, 0.8);
+    background-color: rgba(17, 16, 17, 0.9);
     opacity: 0;
-    transition: all .3s ease; 
+    transition: all .1s ease; 
 }
 .image {
     width:100%;
@@ -92,8 +100,8 @@ blockquote:before {
     color: #dfdfe4;
     position: absolute;
     top: 0px;
-    left: 10px;
-    width: 90%;
+    left: 20px;
+    width: 80%;
     height: auto; 
     max-height: 100%; 
     z-index: 50;
@@ -106,23 +114,107 @@ blockquote:before {
     word-wrap: break-word;
     opacity: 0;
     transition: all .2s ease; 
+    font-size: .9rem;
+}
+.btn-box {
+    position:absolute;
+    left:20px;
+    bottom: -40px;
+    z-index: 50;
+    opacity: 0;
 }
 .holder:hover .image{
     transform-origin:center top; /* Set the origin of the transformation to the bottom */
     transform:  translateY(-3%) scaleX(1.11) scaleY(1.25);
 }
 .holder:hover .layer,
-.holder:hover .pic-holder::after {
+.holder:hover .pic-holder::after,
+.holder:hover .btn-box {
     opacity: 1;
 }
-.movie-catalog,
-.TV-catalog {
+.movie-catalog {
     margin-top:80px;
 }
 .icon {
     width: 60%;
     height:60%;
 }
+/* catalog responsive media queries */
+@media only screen and (max-width: 1200px){
+    .category {
+        padding-top: 1rem !important;
+    }
+    .category h4 {
+        font-size: 1.3rem !important;
+    }
+    .layer {
+        -webkit-line-clamp:7;
+        line-clamp: 7;
+    }
+}
+@media only screen and (max-width: 992px){
+    .movie-catalog {
+        margin-top:120px
+    }
+    .category {
+        padding:8px 0!important;
+        margin:0 0 2.5% 3%;
+        border:none !important;
+        text-align: left !important;
+    }
+    .category img{
+        display:none;
+    }
+    .holder {
+        padding:0 3%;
+    }
+    .content {
+        row-gap: 80px !important;
+    }
+    .layer {
+        -webkit-line-clamp: 11;
+        line-clamp: 11;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .content {
+        row-gap: 60px !important;
+    }
+    .layer {
+        -webkit-line-clamp: 9;
+        line-clamp: 9;
+        font-size: .7rem;
+    }
+    .btn-box  a i{
+        font-size: 1rem !important;
+    }
+}
+@media only screen and (max-width: 576px){
+    .category {
+        margin:0 0 2.5% 4.5%;
+    }
+    .category h4 {
+        font-size: 1.5rem !important;
+    }
+    .holder {
+        padding:0 4.5%;
+        width: 50%;
+    }
+    .content {
+    row-gap: 80px !important;
+    }   
+    .layer {
+        -webkit-line-clamp: 12;
+        line-clamp: 12;
+        font-size: .9rem;
+    }
+    .btn-box  a i {
+    font-size: 1.5rem !important;
+    }}
+
+
+
 
 @media screen and (max-width: 750px) and (min-width: 1000px) {
     .copy {
@@ -174,4 +266,4 @@ blockquote {
 
 .hero-name p{
     font-size: 1em;
-}
+}}

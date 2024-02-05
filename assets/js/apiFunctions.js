@@ -46,7 +46,6 @@ function getSetUpHeroAnimeData () {
 
                     // TODO: call Hero Set-up function
                     animeHeroSetup()
-                    console.log(animeHero);
 
                 });
         });
