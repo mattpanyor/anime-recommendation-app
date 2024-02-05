@@ -46,7 +46,6 @@ function getSetUpHeroAnimeData () {
 
                     // TODO: call Hero Set-up function
                     animeHeroSetup()
-                    console.log(animeHero);
 
                 });
         });
@@ -82,7 +81,6 @@ function setUpAnimeCatalogData (genre){
     fetch('https://api.jikan.moe/v4/anime?sort=desc&order_by=score&limit=6&type=tv&genres='+ genre)
         .then((response) => response.json())
         .then((list) => {
-            console.log(list)
             list.data.forEach(anime => {
                 var animeCatalogItem = {
                     title: anime.title,
