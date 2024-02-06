@@ -160,6 +160,43 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     width: 60%;
     height:60%;
 }
+
+/* footer */
+
+.footer {
+    
+    background-color: #000000a2;  
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    font-size: 110%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+  
+  .icons a {
+    background-color: #000000;  
+    text-decoration: none;
+    font-family: 'Ibarra Real Nova', serif;
+    color: #ffffff!important;
+    padding: 10px;
+    border:solid rgb(255, 255, 255) 1px
+    
+    
+  }
+
+   .icons a:hover {
+    color: rgb(222, 17, 185)!important;
+    transition: 0.4s;
+    background-color: #f2f75f;
+    border:solid rgb(222, 17, 185) 1px
+  }
+
+
 /* catalog responsive media queries */
 @media only screen and (max-width: 1200px){
     .category {
