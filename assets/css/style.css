@@ -59,7 +59,28 @@ blockquote:before {
 }
 
 /* Navigation */
+.horizontal-scrollable > .row {  
+    overflow-x: auto !important; 
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;  
 
+}  
+  
+.horizontal-scrollable > .row > .col-xs-4 {  
+    flex: 1;
+    margin-right: 5px;  
+
+}
+
+.col-xs-4 {  
+    color: rgb(255, 255, 255); 
+    background: rgb(159, 191, 233);  
+    font-size: 26px;  
+    padding-bottom: 18px;  
+    padding-top: 16px;
+    
+}  
 
 /* Catalog */
 
@@ -136,7 +157,7 @@ blockquote:before {
 }
 
 @media screen and (max-width: 768px) {
-    /* */
+    /*  adding  for smaller screens*/
 
 .jumbotron {
         height: 100%;
@@ -174,4 +195,9 @@ blockquote {
 
 .hero-name p{
     font-size: 1em;
+}
+.horizontal-scrollable > .row {
+    overflow-x: auto !important;
+    white-space: nowrap;
+}
 }
