@@ -1,10 +1,11 @@
 // =========== Hero Section ============
 function animeHeroSetup() {
-    var heroImage = $("<img>");
-    heroImage.attr("src", animeHero.imgUrl);
-    $(".hero-image").append(heroImage);
-    $(".hero-title").html("<h1>" + animeHero.title + "</h1>");
-    $(".hero-name").text("~ " + animeHero.quoteCharacter);
+    var heroImage = $("<img>"); //initializes image variable to an image element
+    heroImage.attr("src", animeHero.imgUrl); // attaches image link to element
+    $(".hero-image").append(heroImage); //appends value in image variable to hero-image class
+    $(".hero-title").html("<h1>" + animeHero.title + "</h1>");//adds an h1 element with title
+    $(".hero-name").text("~ " + animeHero.quoteCharacter);//adds character name to name class
+    //adds blockquote with citation
     $(".hero-quote").html("<blockquote cite=" + animeHero.animeURL + ">" + animeHero.synopsis + "</blockquote>");
 }
 // =========== Anime Catalog Section ============
