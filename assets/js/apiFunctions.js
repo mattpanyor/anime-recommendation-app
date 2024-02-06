@@ -16,7 +16,7 @@ var animeHero = {
 // this function is to set up the content for the hero
 // executing two API calls to get a random series hit then serve their data to a return object
 function getSetUpHeroAnimeData () {
-
+    //Overcoming Cors issue with API
     const url = "https://cors-anywhere-jung-48d4feb9d097.herokuapp.com/" + "https://animechan.xyz/api/random"
 
         fetch(url, () => {})
@@ -44,7 +44,7 @@ function getSetUpHeroAnimeData () {
                     animeHero.score = anime.score;
                     animeHero.animeURL = anime.url;
 
-                    // TODO: call Hero Set-up function
+                    // Calls Hero Set-up function
                     animeHeroSetup()
 
                 });
