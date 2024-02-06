@@ -345,4 +345,13 @@ blockquote {
 .hero-name p{
     font-size: 1.1em;
 }
+/* Makes the buttons scrollable when smaller*/
+.horizontal-scrollable > .row{
+    flex-wrap: nowrap;
+}
+
+.horizontal-scrollable > .row > .genrebtn {
+    width: 170px;
+    text-wrap: nowrap;
+}
 }
