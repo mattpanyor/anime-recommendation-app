@@ -4,9 +4,12 @@ function animeHeroSetup() {
     heroImage.attr("src", animeHero.imgUrl); // attaches image link to element
     $(".hero-image").append(heroImage); //appends value in image variable to hero-image class
     $(".hero-title").html("<h1>" + animeHero.title + "</h1>");//adds an h1 element with title
+    $(".hero-episodes").text("Episodes: " + animeHero.episodes);
     $(".hero-name").text("~ " + animeHero.quoteCharacter);//adds character name to name class
     //adds blockquote with citation
-    $(".hero-quote").html("<blockquote cite=" + animeHero.animeURL + ">" + animeHero.synopsis + "</blockquote>");
+    $(".hero-quote").html("<blockquote cite=" + animeHero.animeURL + ">" + animeHero.quoteText + "</blockquote>");
+    $(".hero-button").append($('<a>').attr('href', animeHero.animeURL).text('More').attr("target", "_blank"));
+
 }
 // =========== Anime Catalog Section ============
 // This function renders TV catatog
