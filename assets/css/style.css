@@ -59,27 +59,24 @@ blockquote:before {
 }
 
 /* Navigation */
-.horizontal-scrollable > .row {  
+.horizontal-scrollable > .row  {  
     overflow-x: auto !important; 
-    display: flex;
-    justify-content: space-between;
-    white-space: nowrap;  
-
+    display: flex;  
 }  
   
-.horizontal-scrollable > .row > .col-xs-4 {  
+.horizontal-scrollable > .row > .col-xs-5 {  
     flex: 1;
     margin-right: 5px;  
-
 }
 
-.col-xs-4 {  
+.genrebtn{  
     color: rgb(255, 255, 255); 
     background: rgb(159, 191, 233);  
     font-size: 26px;  
+    width: 20%;
     padding-bottom: 18px;  
     padding-top: 16px;
-    
+    box-shadow: 1px 2px 5px #000000;
 }  
 
 /* Catalog */
@@ -196,8 +193,13 @@ blockquote {
 .hero-name p{
     font-size: 1em;
 }
-.horizontal-scrollable > .row {
-    overflow-x: auto !important;
-    white-space: nowrap;
+
+.horizontal-scrollable > .row{
+    flex-wrap: nowrap;
+}
+
+.horizontal-scrollable > .row > .genrebtn {
+    width: 170px;
+    text-wrap: nowrap;
 }
 }
