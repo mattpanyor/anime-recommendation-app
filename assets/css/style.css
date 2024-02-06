@@ -86,7 +86,25 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 }
 
 /* Navigation */
+.horizontal-scrollable > .row  {  
+    overflow-x: auto !important; 
+    display: flex;  
+}  
+  
+.horizontal-scrollable > .row > .col-xs-5 {  
+    flex: 1;
+    margin-right: 5px;  
+}
 
+.genrebtn{  /* Styling for the buttons*/
+    color: rgb(255, 255, 255); 
+    background: rgb(159, 191, 233);  
+    font-size: 26px;  
+    width: 20%;
+    padding-bottom: 18px;  
+    padding-top: 16px;
+    box-shadow: 1px 2px 5px #000000;
+}  
 
 /* Catalog */
 .category{
