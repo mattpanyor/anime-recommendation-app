@@ -165,7 +165,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 
 .footer {
     
-    background-color: #000000d0;
+    background-color: #000000a2;  
     height: 100px;
     display: flex;
     align-items: center;
@@ -179,7 +179,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
   }
   
   .icons a {
-    background-color: #000000;
+    background-color: #000000;  
     text-decoration: none;
     font-family: 'Ibarra Real Nova', serif;
     color: #ffffff!important;
@@ -196,7 +196,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     border:solid rgb(222, 17, 185) 1px
   }
 
-  
+
 /* catalog responsive media queries */
 @media only screen and (max-width: 1200px){
     .category {
