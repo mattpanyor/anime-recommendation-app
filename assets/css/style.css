@@ -147,6 +147,9 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 }  
 
 /* Catalog */
+#catalog {
+    margin:100px 0;
+}
 .category{
     font-family: 'Ibarra Real Nova', serif;
 }

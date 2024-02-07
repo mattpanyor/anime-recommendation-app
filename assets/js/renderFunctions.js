@@ -16,7 +16,7 @@ function animeHeroSetup() {
 function TVrender (){
     var TVCatalog = document.querySelector(".TV-catalog")
     var TVcontent =  document.createElement("div")
-    TVcontent.setAttribute("class","content col-lg-11  d-flex  justyfy-content-lg-between flex-wrap")
+    TVcontent.setAttribute("class","content col-lg-11  d-flex  justyfy-content-lg-between flex-wrap ")
     // TVcontent.setAttribute("style","row-gap:20px")
     var category = document.createElement("div");
     category.classList.add("col-lg-1","col-md-3", "category","text-center","pt-5","border","text-light")
