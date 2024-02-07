@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
 
 body {
-    background-color: #000;
+    background-color: rgba(31,31,31,1);
 }
 
 html, body {
@@ -91,12 +91,12 @@ This is relative to the height of the quote. */
 
 .hero-button:hover {
     transition: 0.4s;
-    background-color: #f2f75f;
-    border:solid rgb(222, 17, 185) 1px
+    background-color: rgb(54, 63, 76);
+    border:solid rgb(87, 87, 87) 1px;
 }
 
-.hero-button a:hover {
-    color: rgb(222, 17, 185)!important;
+.hero-button a:hover {    
+    color: rgb(203, 240, 255)!important;
     transition: 0.4s;
   }
 
@@ -138,7 +138,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 
 .genrebtn{  /* Styling for the buttons*/
     color: rgb(255, 255, 255); 
-    background: rgb(159, 191, 233);  
+    background: rgb(159, 191, 233);
     font-size: 26px;  
     width: 20%;
     padding-bottom: 18px;  
@@ -146,9 +146,19 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     box-shadow: 1px 2px 5px #000000;
 }  
 
+#hero-section {
+    background: #000000;
+    background: linear-gradient(354deg, rgba(120,145,177,1) 34%, rgba(31,31,31,1) 74%);
+}
+
+#navigation {
+    background: rgba(120,145,177,1);
+}
+
 /* Catalog */
 #catalog {
-    margin:100px 0;
+   /* margin:100px 0; */
+    background: linear-gradient(176deg, rgba(120,145,177,1) 34%, rgba(31,31,31,1) 74%);
 }
 .category{
     font-family: 'Ibarra Real Nova', serif;
@@ -251,11 +261,12 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
   }
 
    .icons a:hover {
-    color: rgb(222, 17, 185)!important;
+    color: rgb(203, 240, 255)!important;
     transition: 0.4s;
-    background-color: #f2f75f;
-    border:solid rgb(222, 17, 185) 1px
+    background-color: rgba(120,145,177,1);
+    border:solid rgb(87, 87, 87) 1px;
   }
+
 
 
 

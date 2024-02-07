@@ -10,45 +10,46 @@
 </head>
 <body>
     <!-- Jumbotron -->
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid" id="hero">
-            <!-- One row -->
-            <div class="row lg-12">
-                <!-- Two columns 5&7 grids on large and medium screens. 
-                    Both columns to be 12 grids each on smaller screens -->
-                    <!-- Divs to be populated by Hero function -->
-                <div class="col-lg-5 col-md-5 col-sm-12 hero-image" ></div><!-- Image Div -->
-                
-                <div class="col-lg-7 col-md-7 col-sm-12 copy">
-                    <h1 class="display-4 hero-title"></h1><!-- Title Div-->
-                    <p class="hero-episodes"></p>
-                    <div class="hero-quote"></div><!--Blockquote Div -->
-                    <p class="hero-name"></p><!--Character Name Div -->
-                    <button class="hero-button btn-info w3-btn w3-medium"></button>
-                </div>
-            </div>    
+    <section id="hero-section">
+        <div class="container py-2" id="hero2">
+            <div class="jumbotron jumbotron-fluid" id="hero">
+                <!-- One row -->
+                <div class="row lg-12">
+                    <!-- Two columns 5&7 grids on large and medium screens. 
+                        Both columns to be 12 grids each on smaller screens -->
+                        <!-- Divs to be populated by Hero function -->
+                    <div class="col-lg-5 col-md-5 col-sm-12 hero-image" ></div><!-- Image Div -->
+                    
+                    <div class="col-lg-7 col-md-7 col-sm-12 copy">
+                        <h1 class="display-4 hero-title"></h1><!-- Title Div-->
+                        <p class="hero-episodes"></p>
+                        <div class="hero-quote"></div><!--Blockquote Div -->
+                        <p class="hero-name"></p><!--Character Name Div -->
+                        <button class="hero-button btn-info w3-btn w3-medium"></button>
+                    </div>
+                </div>    
+            </div>
         </div>
-    </div>
-
+    </section>
     <!--Navbar-->
-    <div class="container horizontal-scrollable" id="navigation">  
-        <div class="row text-center">  
-            <button class="p-3  col-lg-2 genrebtn" id="horror" data-id="14">Horror</button>  
-            <button class="p-3 col-lg-2  genrebtn" id="comedy" data-id="4">Comedy</button>  
-            <button class="p-3 col-lg-2  genrebtn" id="romance" data-id="22">Romance</button>  
-            <button class="p-3 col-lg-2  genrebtn" id="scifi" data-id="24">Sci-fi</button>  
-            <button class="p-3 col-lg-2  genrebtn" id="action" data-id="1">Action</button>
+    <section id="navigation">
+        <div class="container horizontal-scrollable">  
+            <div class="row text-center">  
+                <button class="p-3  col-lg-2 genrebtn" id="horror" data-id="14">Horror</button>  
+                <button class="p-3 col-lg-2  genrebtn" id="comedy" data-id="4">Comedy</button>  
+                <button class="p-3 col-lg-2  genrebtn" id="romance" data-id="22">Romance</button>  
+                <button class="p-3 col-lg-2  genrebtn" id="scifi" data-id="24">Sci-fi</button>  
+                <button class="p-3 col-lg-2  genrebtn" id="action" data-id="1">Action</button>
+            </div>  
         </div>  
-    </div>  
-
+    </section>
     <!-- catalog section -->
-    <div class="container">
-        <section id="catalog">
-            <div class="TV-catalog d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-lg-between"></div>
-            <div class="movie-catalog d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-lg-between"></div>
-        </section>
-    </div>
-
+    <section id="catalog">
+        <div class="container py-4">
+                <div class="TV-catalog d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-lg-between"></div>
+                <div class="movie-catalog d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-lg-between"></div>       
+        </div>
+    </section>
     <!-- Footer -->
     <div class="container">
         <div class="row">
