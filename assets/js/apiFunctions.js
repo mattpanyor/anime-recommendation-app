@@ -95,8 +95,9 @@ function setUpAnimeCatalogData (genre){
                     
             });
             // console.log(TVcatalog);
-            //TODO TV catalog building function
-            TVrender()
+            
+            TVrender();
+            TVcatalog = []
         });
 
     fetch('https://api.jikan.moe/v4/anime?sort=desc&order_by=score&limit=6&type=movie&genres='+ genre)
@@ -116,6 +117,7 @@ function setUpAnimeCatalogData (genre){
             });
             // console.log(Moviecatalog);
             //TODO Movie catalog building function
-            movieRender()
+            movieRender();
+            Moviecatalog = [];
         });
 }
