@@ -223,25 +223,26 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 
 .footer {
     
-    background-color: #000000a2;  
+     
     height: 100px;
     display: flex;
     align-items: center;
   }
   
   .icons {
-    font-size: 110%;
+    font-size: 105%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-grow: 1;
   }
   
   .icons a {
-    background-color: #000000;  
+    
     text-decoration: none;
-    color: #ffffff!important;
+    font-family: 'Ibarra Real Nova', serif;
+    color: white!important;
     padding: 10px;
-    border:solid rgb(255, 255, 255) 1px
+    border:solid white 1px;
     
     
   }
@@ -385,3 +386,17 @@ blockquote {
     text-wrap: nowrap;
 }
 }
+/* Footer-switch from row to column for smaller screens */
+@media (max-width: 768px) {
+    .icons {
+      margin-top: 200px;
+      flex-direction: column;
+      align-items: left;
+      font-size: 100%;
+    }
+  
+    .icons a {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
