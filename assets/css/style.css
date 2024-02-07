@@ -27,8 +27,14 @@ a {
 /* Puts 20px padding and margins all around the jumbotron */
 .jumbotron {
     position: relative;
-    padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.hero-episodes {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight:700;
+    font-size: 1.1em;
 }
 
 /* Sets font for the quote text to default, ~16px, italic, thinner size font
@@ -37,40 +43,74 @@ blockquote {
     font-family: 'Ibarra Real Nova', serif;
     font-style: italic;
     font-weight: 200;
-    max-width: 95%;
-    max-height: fit-content;
-    font-size: 1em;
+    max-width: 100%;
+    font-size: 1.1em;
     border-top: 1px solid white;
 }
 /* Adds an open quote to the beginning of the blockquote */
 blockquote:before {
+    font-family: 'Ibarra Real Nova', serif;
     content: "‟";
     color: white;
     font-size: 2rem;
 }
 /* Adds padding to the top of the title and sets the font. */
 .hero-title h1 {
-    font-weight:700;
-    font-size: bold;
     font-family: 'Ibarra Real Nova', serif;
+    font-weight:700;
     padding-top: 10px;
 }
 /* Centers the image in its column */
 .hero-image {
     display:flex;
-    justify-content: center;
+    justify-content: left;
 }
 /* Makes the image 100% of the available height. 
 This is relative to the height of the quote. */
 .hero-image img {
-    height: 100%;
+    max-height: 500px;
 }
 
 /* Makes the character name default sized & bold */
-.hero-name p {
-    font-size: 1em;
-    font-weight: bold;
+.hero-name  {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.1em;
+    font-weight: 400;
 }
+
+.hero-button {
+    font-family: 'Ibarra Real Nova', serif;
+    width: 150px;
+    font-weight: 300;
+    background-color: #000000a2;  
+    color: #ffffff!important;
+    padding: 10px;
+    margin: 10px 0;
+    border:solid rgb(255, 255, 255) 1px
+}
+
+.hero-button:hover {
+    transition: 0.4s;
+    background-color: #f2f75f;
+    border:solid rgb(222, 17, 185) 1px
+}
+
+.hero-button a:hover {
+    color: rgb(222, 17, 185)!important;
+    transition: 0.4s;
+  }
+
+/*
+.hero-button a:hover {
+    color: rgb(222, 17, 185)!important;
+    transition: 0.4s;
+    background-color: #f2f75f;
+    border:solid rgb(222, 17, 185) 1px
+  }
+  */
+
+
+
 
 /* Makes the text in the column at least 50% wide 
 and at most 90% to make it line up with the catalog content. 
@@ -107,8 +147,12 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 }  
 
 /* Catalog */
+#catalog {
+    margin:100px 0;
+}
 .category{
     font-family: 'Ibarra Real Nova', serif;
+    padding-right: 1%;
 }
 .holder {
     padding:0 1.5%;
@@ -215,6 +259,8 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
   }
 
 
+
+
 /* catalog responsive media queries */
 @media only screen and (max-width: 1200px){
     .category {
@@ -296,7 +342,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     /* Makes the text column 75% of the available space. */
     .copy {
         flex-direction: column;  
-        max-width:75%;
+        max-width:90%;
     }
     /* Makes the image no more than 70% the height of the text. */
     .hero-image img {
@@ -308,26 +354,19 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     
 /* The entire hero section class. Adds 20 pixels padding and margins to the bottom of the section. */
 .jumbotron {
-    padding-bottom: 20px;
     margin-bottom: 20px;
 }
-/* Center the title */
-.hero-title h1{
-    align-items: center;
-}
 
-/* Assuming 1em=16px, the width of the quote uses 100% of available width.*/
+/* The quote uses 100% of available width.*/
 blockquote {
     max-width: 100%;
     font-size: 1em;
     border-top: 1px solid white;
-    max-height: fit-content;
 }
 
 /* Aligns the elements of the text section in a column. */
 .copy {
     flex-direction: column;  
-    margin-top: auto;
     width:100%;
 }
 /* Centers the image */
@@ -341,10 +380,6 @@ blockquote {
     max-height: 50%;
 }
 
-/* Makes the name of the character slightly bigger. */
-.hero-name p{
-    font-size: 1.1em;
-}
 /* Makes the buttons scrollable when smaller*/
 .horizontal-scrollable > .row{
     flex-wrap: nowrap;
