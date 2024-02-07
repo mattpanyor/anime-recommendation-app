@@ -149,6 +149,7 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
 #hero-section {
     background: #000000;
     background: linear-gradient(354deg, rgba(120,145,177,1) 34%, rgba(31,31,31,1) 74%);
+    min-height: 360px;
 }
 
 #navigation {
