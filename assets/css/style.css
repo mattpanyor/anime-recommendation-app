@@ -24,7 +24,6 @@ a {
 }
 
 /* Hero Section*/
-/* Puts 20px padding and margins all around the jumbotron */
 .jumbotron {
     position: relative;
     margin: 10px 0;
@@ -37,8 +36,7 @@ a {
     font-size: 1.1em;
 }
 
-/* Sets font for the quote text to default, ~16px, italic, thinner size font
-with a max width to 95% of the available space in the column */
+
 blockquote {
     font-family: 'Ibarra Real Nova', serif;
     font-style: italic;
@@ -54,24 +52,22 @@ blockquote:before {
     color: white;
     font-size: 2rem;
 }
-/* Adds padding to the top of the title and sets the font. */
+
 .hero-title h1 {
     font-family: 'Ibarra Real Nova', serif;
     font-weight:700;
     padding-top: 10px;
 }
-/* Centers the image in its column */
+
 .hero-image {
     display:flex;
     justify-content: left;
 }
-/* Makes the image 100% of the available height. 
-This is relative to the height of the quote. */
+
 .hero-image img {
     max-height: 500px;
 }
 
-/* Makes the character name default sized & bold */
 .hero-name  {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 1.1em;
@@ -100,21 +96,8 @@ This is relative to the height of the quote. */
     transition: 0.4s;
   }
 
-/*
-.hero-button a:hover {
-    color: rgb(222, 17, 185)!important;
-    transition: 0.4s;
-    background-color: #f2f75f;
-    border:solid rgb(222, 17, 185) 1px
-  }
-  */
 
-
-
-
-/* Makes the text in the column at least 50% wide 
-and at most 90% to make it line up with the catalog content. 
-Displays the elements in a column. Puts a 20px padding at the bottom. */
+/* Displays the elements in a column.  */
 .copy {
     min-width: 50%;
     max-width: 90%;
@@ -346,47 +329,40 @@ Displays the elements in a column. Puts a 20px padding at the bottom. */
     font-size: 1.5rem !important;
     }}
 
-/* Hero section Media Queries */
+/* Media Queries */
 
-/* For mid-size screens  */
 @media screen and (max-width: 768px) and (min-width: 1200px) {
-    /* Makes the text column 75% of the available space. */
     .copy {
         flex-direction: column;  
         max-width:90%;
     }
-    /* Makes the image no more than 70% the height of the text. */
     .hero-image img {
         max-height: 70%;
     }
 }
-/* For screens smaller than 768 pixels  */
+
 @media screen and (max-width: 768px) {
     
-/* The entire hero section class. Adds 20 pixels padding and margins to the bottom of the section. */
 .jumbotron {
     margin-bottom: 20px;
 }
 
-/* The quote uses 100% of available width.*/
 blockquote {
     max-width: 100%;
     font-size: 1em;
     border-top: 1px solid white;
 }
 
-/* Aligns the elements of the text section in a column. */
 .copy {
     flex-direction: column;  
     width:100%;
 }
-/* Centers the image */
+
 .hero-image {
     justify-content: center;
     height: 100%;
 }
 
-/* Maximum height for the image is 50% of the available space. */
 .hero-image img {
     max-height: 50%;
 }
